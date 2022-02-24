@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Contacts from './Contacts'
 import { Container, Header } from "semantic-ui-react";
 import "./App.css";
 
@@ -18,6 +19,7 @@ class App extends Component {
     return (
       <div>
         <h1>React Contact List</h1>
+        <Contacts contacts={this.state.contacts} />
       </div>
     );
   }
